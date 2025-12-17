@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "borderless_windowed_vulkan",
+  "version": "${version}",
+  "name": "Borderless Windowed Vulkan",
+  "description": "Borderless fullscreen windowed mode designed to stay compatible with VulkanMod.",
+  "authors": ["cutebow"],
+  "license": "MIT",
+  "environment": "client",
+  "icon": "assets/borderless_windowed_vulkan/icon.png",
+  "entrypoints": {
+    "client": ["me.cutebow.borderless_windowed_vulkan.BorderlessWindowedVulkanClient"],
+    "modmenu": ["me.cutebow.borderless_windowed_vulkan.ModMenuEntry"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21",
+    "fabric-api": "*",
+    "modmenu": ">=11.0.0",
+    "yet_another_config_lib_v3": ">=3.6.2"
+  },
+  "suggests": {
+    "vulkanmod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/user/cutebow",
+        "modmenu.discord": "https://discord.gg/A2Nx9kxDeB"
+      }
+    }
+  }
+}
